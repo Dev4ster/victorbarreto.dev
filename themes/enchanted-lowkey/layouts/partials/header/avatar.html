@@ -4,7 +4,6 @@
 <div class="flex-none w-20 h-20 rounded-full overflow-hidden">
   <a href="{{ .Site.BaseURL }}">
     <img
-      srcset="{{- with $tiny.RelPermalink -}}{{.}} 80w{{- end -}}"
       src="{{ $avatar.RelPermalink }}"
       width="{{ $avatar.Width }}"
       height="{{ $avatar.Height }}"
