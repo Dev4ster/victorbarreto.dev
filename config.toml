@@ -1,0 +1,6 @@
+theme = "lowkey"
+[pagination]
+  pagerSize = 10
+[languages]
+  [languages.en]
+    languageCode = "en-US"
