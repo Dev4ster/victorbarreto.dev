@@ -1424,6 +1424,10 @@ nav a.active:is(.dark *) {
     flex-direction: row;
   }
 
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .sm\:justify-end {
     justify-content: flex-end;
   }

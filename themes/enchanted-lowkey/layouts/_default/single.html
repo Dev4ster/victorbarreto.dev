@@ -4,7 +4,7 @@
   <header class="flex flex-col gap-2">
     <h2 class="title-large">{{ .Title }}</h2>
 
-    <div class="meta">
+    <div class="meta flex-wrap">
       {{/* Publish date */}}
       {{ if not .Params.hideReadingTime }} 
       <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>

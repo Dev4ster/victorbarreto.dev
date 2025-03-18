@@ -3,6 +3,19 @@
   <span class="theme-icon dark"> {{ partial "utils/icon" "moon" }} </span>
 </button>
 
+<style>
+  .toggle-theme {
+    border-radius: 100%;
+  }
+  .toggle-theme:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .dark .toggle-theme:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+</style>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const theme = localStorage.getItem('theme');
