@@ -5,6 +5,7 @@ description: "Full Stack Developer with expertise in JavaScript, TypeScript, and
 date: 2023-06-01
 lastmod: 2023-12-15
 draft: false
+hideReadingTime: true
 ---
 
 ## Full Stack Developer & Cloud Enthusiast

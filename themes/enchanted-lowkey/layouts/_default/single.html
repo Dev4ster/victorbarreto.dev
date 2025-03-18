@@ -6,9 +6,11 @@
 
     <div class="meta">
       {{/* Publish date */}}
+      {{ if not .Params.hideReadingTime }} 
       <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
         {{ .PublishDate.Format "02/01/2006" }} - {{ printf (i18n "estimatedReadingTime") .ReadingTime }}
       </time>
+      {{ end }}
 
       {{/* Categories */}} 
       {{ with (.GetTerms "categories") }} — 

@@ -25,7 +25,7 @@ Reflections on career growth, productivity hacks, and the balance needed to thri
 
 I deeply believe that knowledge only multiplies when shared. Each article here is an invitation to grow together, question the conventional, and build a more inclusive and innovative technological future.
 
-Feel free to explore, question, and connect with me on [GitHub](https://github.com) and other platforms. Shall we exchange ideas?
+Feel free to explore, question, and connect with me on [GitHub](https://github.com/victorbarretodev) and other platforms. Shall we exchange ideas?
 
 *"Technology is most powerful when it brings people together."*
 

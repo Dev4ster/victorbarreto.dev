@@ -11,21 +11,15 @@
     weight = 2
 
 [[main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories"
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts"
     weight = 3
 
 [[main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags"
-    weight = 4
-
-[[main]]
-    identifier = "donate"
-    name = "Donate"
-    url = "https://ko-fi.com/nixentric"
+    identifier = "linkedin"
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/victorbarretodev"
     weight = 5
     
 # Social Media Configuration

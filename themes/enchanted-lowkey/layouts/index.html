@@ -1,9 +1,68 @@
 {{ define "main" }} 
 
 <div class="py-2 flex flex-col gap-1">
-  <h3 class="title-small">{{ .Title }}</h3>
+  <h2 class="title-small">{{ .Title }}</h2>
 </div>
 
-    <section>{{ .Content }} </section>
+<section>{{ .Content }}</section>
+<hr>
+<!-- Seção de Últimos Posts -->
+<div class="mt-12">
+  <h2 class="text-2xl font-bold mb-6">{{ i18n "latestPosts" }}</h2>
+  
+  <div class="flex flex-col gap-8">
+    {{ range first 4 (where .Site.RegularPages "Type" "posts") }}
+    <article class="flex flex-col gap-1">
+      <h1>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h1>
+      
+      <!-- Categorias -->
+      {{ if .Params.categories }}
+      <div class="flex flex-wrap gap-2 mb-1">
+        {{ range .Params.categories }}
+          <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" 
+            class="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+            {{ . }}
+          </a>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      <span class="date">
+        <time datetime="{{ .PublishDate }}" title='{{ .PublishDate.Format "Mon, Jan 2, 2006, 3:04 PM MST" }}'>
+          {{ .PublishDate.Format "02/01/2006" }}
+        </time>
+      </span>
+
+      <div class="description">
+        {{ if .Params.description }}
+          {{ .Params.description }}
+        {{ else if .Summary }}
+          {{ .Summary }}
+        {{ end }}
+      </div>
+
+      <div class="mt-2">
+        <a class="read-more" href="{{ .Permalink }}">
+          {{ i18n "readMore" }}
+          <span class="w-4 h-4 stroke-2">
+            {{ partial "utils/icon" "arrow-right" }}
+          </span>
+        </a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  
+  <div class="text-center mt-8">
+    <a href="/blog" class="read-more">
+      {{ i18n "summary" }}
+      <span class="w-4 h-4 stroke-2">
+        {{ partial "utils/icon" "arrow-right" }}
+      </span>
+    </a>
+  </div>
+</div>
 
 {{ end }}

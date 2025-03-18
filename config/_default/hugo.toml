@@ -3,7 +3,7 @@ copyright = "{year}" # To make 2007 - 2022. Just add before {year} example: 2007
 languageCode = 'en-US'
 defaultContentLanguage = 'en'
 theme = 'enchanted-lowkey'
-title = 'Victor Barreto - Software Engineer'
+title = 'Victor Barreto'
 enableRobotsTXT = true
 summaryLength = 15
 pagerSize  = 5
@@ -24,3 +24,20 @@ pagerSize  = 5
     noHl = false
     style = 'dracula'
     tabWidth = 4
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  posts = "/posts/:filename/"
+  categories = "/categories/:slug/"
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content"
+    weight = 1
+  [languages.pt-br]
+    languageName = "Português"
+    contentDir = "content/br"
+    weight = 2
