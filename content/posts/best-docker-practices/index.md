@@ -1,5 +1,5 @@
 ---
-title: "Best-Docker-Practices"
+title: "Best Docker Practices"
 date: 2025-03-17T21:38:56-03:00
 draft: false # Set 'false' to publish
 tableOfContents: true # Enable/disable Table of Contents
